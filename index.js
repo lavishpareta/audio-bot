@@ -7,7 +7,9 @@ const {
 } = require('@discordjs/voice');
 const play = require('play-dl');
 
-const TOKEN = 'MTM4NjAzNTgzNjk1NjQ0Njc1MA.GFkznN.9hYgaLvbeUWhVD-j7HS0gYdRNKpvFeNAM53E5A'; // <- Replace with your actual token
+require('dotenv').config();
+client.login(process.env.TOKEN)
+const TOKEN = 'token'; // <- Replace with your actual token
 const PREFIX = '!';
 
 const client = new Client({
